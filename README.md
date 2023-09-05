@@ -18,7 +18,7 @@ After making the model I built some barriers for robot and installed "Teleop twi
 # Using python sctipts
 I added package for scripts in project and wrote the first one to make robot move to given coordinates. 
 ![image](https://github.com/pipopolam-03/First-robot-in-ROS/assets/69760973/6fe53067-830a-41be-b489-3334665d48c1)
-
+![image](https://github.com/pipopolam-03/First-robot-in-ROS/assets/69760973/87c30b9c-c50b-4d74-ad5a-b7278ce969f2)
 
 After this I used lidar from this snatched model and made some big fences. My goal was made robot feel these walls and bypass them. So, I started use lidar readings. The point of my algorithm is: check barrier, do 90deg rotation and a few steps, and return. After this check barriers again and do this cycle untill robot leave the barrier zone. After this it can continue move to coordinates. The code of this script is in the file.
 ![image](https://github.com/pipopolam-03/First-robot-in-ROS/assets/69760973/a0a94016-cda3-4395-92a3-0673ca5584a0)
@@ -27,5 +27,6 @@ After this I used lidar from this snatched model and made some big fences. My go
 The last thind I did is trust and reputation model. I added one big truck as a barrier and made three robots standing in front of it. Two of them tell the truth about the barrier and one is lying. So, the point is to calculate reputation of every robot to understand which of them you can trust. The scripts (for impostor and for normal robots) isn't too complicated. I transfered information between them via their nodes and compared readings from lidar for each from each. So, this is what i got.
 
 ![image](https://github.com/pipopolam-03/First-robot-in-ROS/assets/69760973/a2c2c6ef-4207-4fee-b5dd-529b2d5abdeb)
+![image](https://github.com/pipopolam-03/First-robot-in-ROS/assets/69760973/89e031f6-4497-4847-bede-016be56e178c)
 
 
